@@ -51,7 +51,7 @@
                 />
             </div>
             <div class="form-group">
-                <label for="role">Выберите роль:</label>
+                <label for="role">Выберите рoль:</label>
                 <select class="form-control role-select" id="role" name="role">
                     <option value="empty">-</option>
                     <option value="master">Мастер</option>
