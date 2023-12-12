@@ -5,6 +5,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $password = $_POST["password"];
     $selectedRole = $_POST["role"];
 
+    // Валидация введенных данных
     if (empty($login) || empty($password) || $selectedRole === "empty") {
         echo("Пожалуйста, заполните все поля!");
         exit;
