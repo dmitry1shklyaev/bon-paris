@@ -6,6 +6,7 @@ class Administrator {
     }
 }
 
+
 class Master {
     constructor(ID, login, password, isTop) {
         this.ID = ID;
