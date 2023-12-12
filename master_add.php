@@ -13,9 +13,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $password = $_POST["masterPassword"];
     $isTop = isset($_POST["topMasterCheckbox"]) ? 1 : 0; // Если чекбокс отмечен, устанавливаем 1, иначе 0
 
-    // Убедитесь, что вы определили переменные $id_role и $name, например:
-    $id_role = 1; // Значение по умолчанию
-    $name = "";  // Пустая строка или укажите значение по умолчанию
+
 
     // Подготовка и выполнение запроса
     $stmt = $mysqli->prepare("INSERT INTO users (login, password, id_role, isTop, name) VALUES (?, ?, ?, ?, ?)");
