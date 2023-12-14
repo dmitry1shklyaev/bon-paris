@@ -33,7 +33,7 @@
         background-color: #9c1138;
       }
     </style>
-    <title>Регистрация</title>
+    <title>Регистрaция</title>
   </head>
   <body>
     <div class="registration-container">
