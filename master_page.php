@@ -9,7 +9,7 @@
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     />
     <style>
-      /* Добавляем немного отступов и выравнивания для красоты */
+      /* Добавляем немного отступов и выравнивания для красоты  */
       body {
         margin: 15%;
       }
