@@ -1,5 +1,4 @@
 <?php
-session_start();
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Получаем введенные данные
     $login = $_POST["username"];
@@ -42,7 +41,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if ($result && $result->num_rows > 0) {
         // Успешная авторизация
-        $_SESSION['username'] = $login; // Сохраняем логин в сессии
         switch ($selectedRole) {
             case "master":
                 header("Location: /master_page.php");
@@ -60,6 +58,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     } else {
         echo "Неверный логин, пароль или роль.";
     }
+
     // Закрытие соединения
     $mysqli->close();
 }
