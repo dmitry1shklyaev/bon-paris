@@ -34,7 +34,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Закрытие соединения
         $stmt->close();
     } else {
-
+        echo "Ошибка при подготовке запроса: " . $mysqli->error;
     }
 
     $mysqli->close();
