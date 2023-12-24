@@ -19,6 +19,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if ($mysqli->connect_error) {
         die("Ошибка подключения: " . $mysqli->connect_error);
     }
+
     // Определение ID роли
     switch ($selectedRole) {
         case "administrator":
